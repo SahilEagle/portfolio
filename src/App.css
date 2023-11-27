@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* ************************  NAVBAR ********************************* */
+.nav-link{
+  border-bottom: 3px solid rgb(33, 37, 41);
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 3px solid white !important;
+  transition: border-bottom 0.5s ease-in-out;
+}
