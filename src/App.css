@@ -58,3 +58,15 @@
   width: 100vw;
   z-index: 1;
 }
+
+/* ************************  Header tech stack ********************************* */
+.tech-stack, .vertical{
+  font-size: 30px;
+  margin-top: 14px;
+}
+
+.tech-box:hover{
+  border-bottom: 10px solid white;
+  cursor: pointer;
+  transition: border-bottom .5s ease;
+}
