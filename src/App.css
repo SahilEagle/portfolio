@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /* ************************  NAVBAR ********************************* */
 .nav-link {
   border-bottom: 3px solid rgb(33, 37, 41);
@@ -37,11 +42,11 @@
 
 /* ************************  about section ********************************* */
 .about {
-  height: 90vh;
+  height: 80vh;
 }
 
 .border-about {
-  padding: 40px;
+  padding: 20px;
   background-color: #eeeeee;
   margin-left: -40px;
   margin-right: -40px;
@@ -53,4 +58,21 @@
 
 .border-about p {
   font-size: 20px;
+}
+
+/* ************************  Project section ********************************* */
+
+.project-section{
+  height: 80vh;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+/* ************************  Contact section ********************************* */
+
+.form-section{
+  height: 80vh;
+  background-color: #eeeeee;
+  margin-top: 100px;
+  padding: 20px;
 }

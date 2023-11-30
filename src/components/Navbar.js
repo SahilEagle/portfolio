@@ -6,9 +6,9 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand text-white" href="/">Sahil</a>
+                <a className="navbar-brand" href="/">Sahil</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={faBars} style={{ color: "#fafafa", }} />
                 </button>
