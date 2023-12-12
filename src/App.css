@@ -1,26 +1,61 @@
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
 
+:root{
+  --primaryDefColor: #212529;
+  --primaryColor : #cf51ff;
+  --secondaryColor : white;
+  --shadow : #dd61d4;
+  /* #fd88ff */
+}
+
 /* ************************  NAVBAR ********************************* */
+
+.navbar{
+  background-color: var(--secondaryColor) !important;
+  box-shadow: 0px -10px 20px 0px black;
+}
+
+.navbar-brand{
+  color: var(--primaryDefColor) !important;
+}
+
+.navbar-brand:hover{
+  color: var(--primaryColor) !important;
+  transition: color 0.5s ease-in-out;
+}
+
 .nav-link {
-  border-bottom: 3px solid rgb(33, 37, 41);
+  border-bottom: 3px solid white;
+  color: var(--primaryDefColor) !important;
+}
+
+.resume:hover{
+  color: var(--primaryColor) !important;
+  transition: color .5s ease-in-out;
 }
 
 .navbar-nav>li>a:hover {
-  border-bottom: 3px solid white !important;
-  transition: border-bottom 0.5s ease-in-out;
+  color: var(--primaryColor) !important;
+  border-bottom: 3px solid var(--primaryColor) !important;
+  transition: border-bottom, color .5s ease-in-out;
 }
 
 /* ************************  Typed Text ********************************* */
 .head {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .typed-text {
   font-size: 45px;
+}
+
+.svg-color:hover {
+  fill: var(--primaryColor);
+  transition: fill .5s ease-in-out;
 }
 
 /* ************************  Header tech stack ********************************* */
@@ -30,7 +65,7 @@ html{
   margin-top: 14px;
 }
 
-.hero-profile{
+.hero-profile {
   padding-left: 30px;
 }
 
@@ -42,14 +77,15 @@ html{
 
 /* ************************  about section ********************************* */
 .about {
-  height: 80vh;
+  height: 60vh;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .border-about {
   padding: 20px;
-  background-color: #eeeeee;
-  margin-left: -40px;
-  margin-right: -40px;
+  background-color: white;
+  box-shadow: 0px 0px 50px -15px #dd61d4;
 }
 
 .border-about h2 {
@@ -60,22 +96,51 @@ html{
   font-size: 20px;
 }
 
+.about-link{
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
 /* ************************  Project section ********************************* */
 
-.project-section{
+.project-section {
   height: 80vh;
-  background-color: #eeeeee;
+  background-color: white;
   padding: 20px;
+  box-shadow: 0px 0px 50px -15px #dd61d4;
 }
 
-.txty{
+.txty {
   padding-left: 20px;
 }
+
 /* ************************  Contact section ********************************* */
 
-.form-section{
+.form-section {
   height: 80vh;
-  background-color: #eeeeee;
+  background-color: white;
   margin-top: 100px;
   padding: 20px;
+  box-shadow: 0px 0px 50px -15px #dd61d4;
+}
+
+.form-button:hover{
+  transform: scale(1.09);
+  background-color: var(--primaryColor) !important;
+  transition: backgroud-color .5s ease-in-out;
+  border: none;
+}
+
+#alert-box{
+  /* display: none; */
+  opacity: 0;
+  transition: opacity ease-in-out;
+  transition-duration: 0.25s;
+  /* animation: fade-in 1s; */
+}
+
+/* ************************  Footer section ********************************* */
+
+.foot{
+  margin-top: 100px !important;
 }
