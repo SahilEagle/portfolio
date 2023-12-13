@@ -51,7 +51,7 @@ html {
 
 /* ************************  Typed Text ********************************* */
 .head {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 50px;
 }
 
@@ -81,14 +81,36 @@ html {
   transition: border-bottom .5s ease;
 }
 
+@media (max-width:768px) {
+  .tech-stack{
+    font-size: 30px;
+  }
+  .tech-box img{
+    width: 30px;
+  }
+  .tech-box:hover{
+    transition: none;
+    border-bottom: none;
+  }
+}
+@media (max-width:498px) {
+  .vertical{
+    display: none;
+  }
+  .tech-stack{
+    font-size: 20px;
+  }
+}
+
 /* ************************  about section ********************************* */
 .about {
-  height: 60vh;
+  height: 80vh;
   padding-left: 0px;
   padding-right: 0px;
 }
 
 .border-about {
+  margin-top: 80px;
   padding: 20px;
   background-color: white;
   box-shadow: 0px 0px 50px -15px #dd61d4;
@@ -110,6 +132,7 @@ html {
 /* ************************  Project section ********************************* */
 
 .project-section {
+  margin-top: 50px;
   height: 80vh;
   background-color: white;
   padding: 20px;

@@ -4,10 +4,10 @@ import Typed from "react-typed";
 const Header = () => {
     return (
         <>
-            <div className='head' id='home'>
-                <div className="header-wrapper container d-flex flex-row mt-5">
+            <div className='head container' id='home'>
+                <div className="header-wrapper d-flex flex-lg-row flex-column mt-5">
                     <div>
-                        <div className="flex-column d-flex justify-content-center align-item-center mt-5">
+                        <div className="flex-column d-flex justify-content-center">
                             <div className="mt-5"></div>
                             <h1 style={{ fontSize: "50px" }}>Full Stack Developer</h1>
                             <Typed
@@ -30,12 +30,12 @@ const Header = () => {
 
                         </div>
                     </div>
-                    <div className="hero-profile col-6 d-flex justify-content-center align-item-center mt-5">
+                    <div className="hero-profile d-flex justify-content-start justify-content-lg-center mt-5">
                         <img className='rounded' src="../IMG_0951.jpg" width={300} alt="profile" />
                     </div>
                 </div>
                 <div className="container">
-                    <div className="d-flex flex-row gap-4 justify-content-start align-item-center">
+                    <div className="d-flex flex-row gap-4 justify-content-start">
                         <p className='tech-stack'>Tech Stack</p>
                         <p className='vertical'>|</p>
                         <div className="tech-box d-flex gap-1">
