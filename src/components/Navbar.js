@@ -3,6 +3,9 @@ import React , {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+// import { faStarAndCrescent } from "@fortawesome/free-solid-svg-icons";
+// import { faStar } from "@fortawesome/free-solid-svg-icons";
+
 
 function Navbar() {
 
@@ -17,7 +20,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
                 <a className="navbar-brand fs-3" href="/#">Sahil.dev</a>
                 <button
@@ -48,6 +51,10 @@ function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link text-white" onClick={handleMenuItemClick} href="#Contact">Contact</a>
                         </li>
+                        {/* <div class="vr ms-1 me-1"></div>
+                        <li className="nav-item">
+                            <a className='nav-link text-white' href="/#"><FontAwesomeIcon icon={faStarAndCrescent} /></a>
+                        </li> */}
                     </ul>
                 </div>
             </div>

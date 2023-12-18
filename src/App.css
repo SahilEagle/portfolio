@@ -14,7 +14,9 @@ html {
 /* ************************  NAVBAR ********************************* */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .navbar{
-  background-color: var(--secondaryColor) !important;
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  background-color: var(--secondaryColor);
   box-shadow: 0px -10px 20px 0px black;
 }
 
@@ -29,7 +31,7 @@ html {
 }
 
 .nav-link {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid transparent;
   color: var(--primaryDefColor) !important;
 }
 
@@ -100,6 +102,12 @@ html {
   .tech-stack{
     font-size: 20px;
   }
+}
+
+.star{
+  position: fixed;
+  left: 20px;
+  top: 100px;
 }
 
 /* ************************  about section ********************************* */
