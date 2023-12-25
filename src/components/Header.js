@@ -4,7 +4,7 @@ import Typed from "react-typed";
 const Header = () => {
     return (
         <>
-            <div className='head container' id='home'>
+            <div className='head container' id='Home'>
                 <div className="header-wrapper d-flex flex-lg-row flex-column mt-5">
                     <div>
                         <div className="flex-column d-flex justify-content-center">
@@ -30,8 +30,10 @@ const Header = () => {
 
                         </div>
                     </div>
-                    <div className="hero-profile d-flex justify-content-start justify-content-lg-center mt-5">
-                        <img className='rounded' src="../IMG_0951.jpg" width={300} alt="profile" />
+                    <div className='hero'>
+                        <div className="hero-profile d-flex justify-content-start justify-content-lg-center mt-5">
+                            <img src="../Subject.png" className='hero-img' alt="hero" />
+                        </div>
                     </div>
                 </div>
                 <div className="container">
@@ -40,15 +42,15 @@ const Header = () => {
                         <p className='vertical'>|</p>
                         <div className="tech-box d-flex gap-1">
                             <img width={50} src={'../img/html.svg'} alt="html" />
-                            <img width={50} src={'../img/css.svg'} alt="html" />
+                            <img width={50} src={'../img/css.svg'} alt="css" />
                         </div>
                         <div className="tech-box d-flex gap-1">
-                            <img width={50} src={'../img/js.svg'} alt="html" />
-                            <img width={43} src={'../img/react.svg'} alt="html" />
+                            <img width={50} src={'../img/js.svg'} alt="js" />
+                            <img width={43} src={'../img/react.svg'} alt="react" />
                         </div>
                         <div className="tech-box d-flex gap-1">
-                            <img width={50} src={'../img/mongo.svg'} alt="html" />
-                            <img width={50} src={'../img/bootstrap.svg'} alt="html" />
+                            <img width={50} src={'../img/mongo.svg'} alt="mongo" />
+                            <img width={50} src={'../img/bootstrap.svg'} alt="bootstrap" />
                         </div>
                     </div>
                 </div>
