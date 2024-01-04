@@ -12,13 +12,13 @@ function Contact() {
             showSuccess();
         }
 
-        // emailjs.sendForm('service_y342rfe', 'template_4mj3r5e', form.current, 'O14O7dXewW7V1EkCF')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         console.log("msg sent budd");
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.sendForm('service_y342rfe', 'template_4mj3r5e', form.current, 'O14O7dXewW7V1EkCF')
+            .then((result) => {
+                console.log(result.text);
+                console.log("msg sent budd");
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     const [isButtonDisabled, setButtonDisabled] = useState(false);
